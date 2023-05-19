@@ -29,7 +29,7 @@ MOTDEC operates 2 types of MTD operations:
 - You have a running Katana network slice manager and Topofuzzer in your Telco Cloud testbed
 
 
-## Deploy TopoFuzzer
+## Deploy MOTDEC
 
 1. change the file `motdec/settings.py` to put the IP and port of Topofuzzer and the MMT probe in the correspondent fields `ALLOWED_HOSTS`, `TOPOFUZZER_IP`, `TOPOFUZZER_PORT`, and `MMT_PORT` (default port is 27017).
 2. also in `motdec/settings.py`, add the public IP of your hosting machine to `ALLOWED_HOSTS`.
@@ -39,4 +39,4 @@ MOTDEC operates 2 types of MTD operations:
 
 **Run MOTDEC's services**
 
-4. start MOTDEC's four services (i.e., Katana and OSM based life cycle management, MMT traffic monitoring, threat and risk assessment, and the MTD orchestration) with the command ````sudo python manage.py main --katana-hostname <slicem_ip>```` where _\<slicem_ip\>_ is the IP or the hostname of the external network slice manager -> For now only Katana is compatible.
+6. start MOTDEC's four services (i.e., Katana and OSM based life cycle management, MMT traffic monitoring, threat and risk assessment, and the MTD orchestration) with the command ````sudo python manage.py main --katana-hostname <slicem_ip>```` where _\<slicem_ip\>_ is the IP or the hostname of the external network slice manager -> For now only Katana is compatible.
