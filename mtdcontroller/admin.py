@@ -1,0 +1,21 @@
+from django.contrib import admin
+from .models import NFVO, Resource, VIM, NS, VNF, VDU, NSi, SliceM, NS_state, VNF_state, VDU_state, NSi_state, VIM_state, RelationNFVO2VIM, RelationSliceM2VIM, Attack_alert, Attack_surface, MTD_action
+
+admin.site.register(NFVO)
+admin.site.register(Resource)
+admin.site.register(VIM)
+admin.site.register(NS)
+admin.site.register(NSi)
+admin.site.register(VNF)
+admin.site.register(VDU)
+admin.site.register(SliceM)
+admin.site.register(VIM_state)
+admin.site.register(NS_state)
+admin.site.register(VNF_state)
+admin.site.register(VDU_state)
+admin.site.register(NSi_state)
+admin.site.register(RelationNFVO2VIM)
+admin.site.register(RelationSliceM2VIM)
+admin.site.register(Attack_alert)
+admin.site.register(Attack_surface)
+admin.site.register(MTD_action)
